@@ -1,4 +1,4 @@
-#User Management System
+# User Management System
 
 #Overview
 This project is a simple User Management System that allows administrators to create users, validate user input, and manage active/inactive user statuses. The system uses HTML, CSS, JavaScript, MySQL, and PHP for front-end and back-end functionalities.
