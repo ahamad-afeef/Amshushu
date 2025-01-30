@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login Page</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!--Login Wrapper-->
+    <div class="login-wrapper" id="loginSection">
+      <div class="login-container">
+        <h2>Welcome Back</h2>
+        <p class="subtitle">Please log in to continue</p>
+        <form id="loginForm">
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required />
+            <span class="error" id="emailError"></span>
+          </div>
+          <div class="form-group">
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" required />
+            <span class="error" id="passwordError"></span>
+          </div>
+          <button type="submit">Login</button>
+          <p id="message"></p>
+        </form>
+      </div>
+    </div>
+
+    <!-- User List Section -->
+    <div class="user-list-wrapper" id="userListSection" style="display: none">
+      <h2 style="text-align: center">User List</h2>
+
+      <!-- Create User Button -->
+      <button id="createUserBtn" class="create-user-btn">Click here to Create User</button>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Email</th>
+            <th>State</th>
+            <th>Country</th>
+            <th>Status</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+        <tbody id="userTableBody">
+          <!-- User data will be inserted here -->
+        </tbody>
+      </table>
+    </div>
+
+    <!-- Create User Form -->
+    <div
+      id="createUserFormWrapper"
+      class="create-user-form-wrapper"
+      style="display: none"
+    >
+      <h2 style="text-align: center">Create User</h2>
+      <form id="createUserForm">
+        <div class="form-row">
+          <div class="form-group">
+            <label for="newName">Name</label>
+            <input type="text" id="newName" name="name" required />
+          </div>
+          <div class="form-group">
+            <label for="newEmail">Email</label>
+            <input type="email" id="newEmail" name="email" required />
+            <small id="emailError" class="error-message"></small>
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label for="newPassword">Password</label>
+            <input type="password" id="newPassword" name="password" required />
+          </div>
+          <div class="form-group">
+            <label for="newPhone">Phone</label>
+            <input type="text" id="newPhone" name="phone" required />
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label for="newState">State</label>
+            <input type="text" id="newState" name="state" required />
+          </div>
+          <div class="form-group">
+            <label for="newCountry">Country</label>
+            <input type="text" id="newCountry" name="country" required />
+          </div>
+        </div>
+
+        <button type="submit">Add User</button>
+      </form>
+      <button id="cancelCreateUserBtn">Back</button>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

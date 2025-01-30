@@ -1,0 +1,223 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(to right, #667eea, #764ba2);
+}
+
+/* Login Container */
+.login-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.login-container {
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  width: 350px;
+  transition: 0.3s;
+}
+
+h2 {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.subtitle {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+/* Form Styling */
+.form-group {
+  text-align: left;
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 5px;
+  color: #444;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+  transition: 0.3s;
+}
+
+input:focus {
+  border-color: #764ba2;
+  outline: none;
+}
+
+/* Button Styling */
+button {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 6px;
+  background: linear-gradient(to right, #667eea, #764ba2);
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+  margin-top: 10px;
+}
+
+button:hover {
+  background: linear-gradient(to right, #5a67d8, #6b46c1);
+}
+
+/* Error Messages */
+.error {
+  color: red;
+  font-size: 12px;
+  display: block;
+  margin-top: 5px;
+}
+
+/* Login Response Message */
+#message {
+  margin-top: 15px;
+  font-size: 14px;
+  font-weight: bold;
+  color: red;
+}
+
+/* User List Container */
+.user-list-wrapper {
+  margin: 50px auto;
+  width: fit-content;
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 0px 10px gray;
+}
+
+table {
+  width: 100%;
+  margin-top: 20px;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: center;
+}
+
+th {
+  background-color: #007bff;
+  color: white;
+}
+
+/* Create User Button Styling */
+.create-user-btn {
+  background: linear-gradient(to right, #5a67d8, #6b46c1);
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-bottom: 20px;
+}
+
+.create-user-btn:hover {
+  background: linear-gradient(to right, #5a67d8, #6b46c1);
+}
+
+/* Create User Form Styling */
+.create-user-form-wrapper {
+  background: white;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.form-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.form-group {
+  flex: 1;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+}
+
+.create-user-form-wrapper button {
+  width: 100%;
+  padding: 12px;
+  background: linear-gradient(to right, #667eea, #764ba2);
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  border: none;
+  border-radius: 6px;
+}
+
+.create-user-form-wrapper button:hover {
+  background: linear-gradient(to right, #5a67d8, #6b46c1);
+}
+
+#cancelCreateUserBtn {
+  margin-top: 10px;
+  display: block;
+  background: linear-gradient(to right, #667eea, #764ba2);
+  color: white;
+  padding: 10px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+#cancelCreateUserBtn:hover {
+  background: linear-gradient(to right, #5a67d8, #6b46c1);
+}
+
+.error-message {
+  color: red;
+  font-size: 12px;
+  display: none;
+}
